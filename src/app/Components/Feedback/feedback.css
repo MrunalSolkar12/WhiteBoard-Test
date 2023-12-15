@@ -1,0 +1,54 @@
+.feedbackbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 12px;
+    padding:  8px 0;
+    color: white;
+    background: white;
+    width:120px;
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 5px;
+    
+  }
+  
+  .feedbackbutton svg {
+    margin-right: 5px;
+    transform: rotate(30deg);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+    
+  }
+  
+  .feedbackbutton span {
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+    color:black;
+    font-weight:bold;
+  }
+  
+  .feedbackbutton:hover svg {
+    transform: translateX(5px) rotate(90deg);
+    
+  }
+  
+  .feedbackbutton:hover span {
+    transform: translateX(7px);
+    color: #e07a5f;
+  }
+
+
+  @media screen and (min-width:1367px) {
+    .feedbackbutton{
+      font-size: 14px;
+      width: 130px;
+    }
+  }
+
+
+  @media screen and (max-width:767px) {
+    .feedbackbutton{
+      display: none;
+    }
+  }

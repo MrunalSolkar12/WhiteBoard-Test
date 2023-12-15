@@ -1,0 +1,47 @@
+.emoji-box{
+    top:0;
+    left:50px;
+    visibility: hidden ;
+}
+
+.emoji{
+    animation: slidup 1s ease-in-out;
+}
+
+
+
+@keyframes slidup{
+    0%{
+        transform: translateY(100%); 
+        visibility: visible ;
+        animation-timing-function: ease-out; /* Add ease-out timing function for popping effect */
+    }
+    20%{
+        transform: translateY(-10%); /* Pop up a little */
+        animation-timing-function: ease-in; /* Add ease-in timing function for settling effect */
+    }
+    40%{
+        transform: translateY(5%); /* Slight bounce */
+        animation-timing-function: ease-out; /* Ease out for settling */
+    }
+    60%{
+        transform: translateY(-2%); /* Slight bounce */
+        animation-timing-function: ease-in; /* Ease in for settling */
+    }
+    80%{
+        transform: translateY(0); /* Settle into final position */
+        animation-timing-function: ease-out; /* Ease out for settling */
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
+
+@media screen and (min-width:1367px){
+ .emoji-box{
+    top:0;
+    left:50%;
+ }   
+
+ 
+}
