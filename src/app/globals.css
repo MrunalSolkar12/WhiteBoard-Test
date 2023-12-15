@@ -1,0 +1,209 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ body{
+  margin:0;
+  padding:0;
+  
+  /*background-color:#F5F5F5 ;*/
+
+  /*cursor:url("https://cdn-icons-png.flaticon.com/128/483/483907.png") 12 12 ,auto;*/
+ cursor:url("https://i.ibb.co/brhhfs6/pencil20x20.png") 0 20,auto;
+  
+}
+
+.sketchcanvas{
+  position: relative;
+}
+.canvas_export{
+  position: absolute;
+  top:10px;
+  left:10px;
+}
+
+.signup-container{
+  position: absolute;
+  top:10px;
+  left:40%;
+}
+
+.share-container{
+  position: absolute;
+  top: 10px;
+  right:10px;
+}
+
+.sidebar-container{
+  position: absolute;
+  top:100px;
+  left:10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+  padding: 0 5px 0 5px;
+  
+}
+
+
+.feedback-container{
+  position: absolute;
+  top:550px;
+  left:10px;
+  box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+}
+
+.signuppage-container{
+  position: absolute;
+  top:0;
+}
+
+.feedbackPage-container{
+  position: absolute;
+  top:0;
+}
+
+.reaction-container{
+  position: absolute;
+  top:70px;
+  left:82.5%;
+}
+
+.emoji-container{
+  position: absolute;
+  top:450px;
+  left:45%;
+}
+
+.colorpicker-container{
+  position: absolute;
+  top:0;
+}
+
+ul{
+  list-style: none;
+}
+
+li{
+  padding:10px 5px ;
+  border-radius: 5px;
+  margin-bottom: 5px;  
+}
+
+.sidebar2-container{
+  position: absolute;
+  top:300px;
+  left:10px;
+  background-color: white;
+  padding:5px;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+}
+
+.sidebar2-container ul li{
+  padding: 5px 8px ;
+}
+
+.pensidebar-container{
+  position: absolute;
+  top:120px;
+  left:5%;
+  background-color: white;
+  padding:5px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+  display: none;
+}
+
+.colorpicker-container{
+ position: absolute;
+ top:140px;
+ left:10%;
+ display: block;
+
+  
+}
+.githubcolorpicker-container{
+ position: absolute;
+ top:140px;
+ left:10%; 
+ display:none;  
+}
+
+
+@media screen and (min-width: 1367px){
+
+
+  .sidebar-container{
+      top:200px;
+      left:10px;
+  }
+
+  .sidebar2-container{
+    top:450px;
+    left:10px;
+  }
+
+  .pensidebar-container{
+    top:220px;
+    left:4%;
+  }
+  
+  .feedback-container{
+    top:860px;
+  }
+  
+  .colorpicker-container{
+    top:270px;
+    left:8%;  
+  }
+  .reaction-container{
+    top:70px;
+    left:82%;
+  }
+  .emoji-container{
+    top:700px;
+    left:45%;
+  }
+  .githubcolorpicker-container{
+    display:none;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .sidebar-container{
+    top:150px;
+  }
+  .side-button{
+    width: 20px;
+    height:20px;
+  }
+  .sidebar2-container{
+    top:350px;
+  }
+  .signup-container{
+    left:35%;
+  }
+  .pensidebar-container{
+    top:180px;
+    left:16%;
+    padding:2px ;
+  }
+  .githubcolorpicker-container{
+    top:80px;
+    left:5%; 
+    display: block;
+  }
+  .colorpicker-container{
+    display: none;
+  }
+  
+
+
+}
+
+
+
+
+
