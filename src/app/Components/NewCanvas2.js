@@ -119,7 +119,7 @@ export const NewCanvas2 = () => {
     };
   }, [isReactionModal]);
 
-  
+  /*
   //Right Click is no allowed.
   useEffect(() => {
     const preventContextMenu = (e) => {
@@ -141,7 +141,7 @@ export const NewCanvas2 = () => {
       document.removeEventListener('keydown', preventInspect);
     };
   }, []);
-
+*/
   //const canvasWidth = typeof window !== "undefined" ? window.innerWidth : 10000;
   //const canvasHeight = typeof window !== "undefined" ? window.innerHeight : 10000;
 
